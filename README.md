@@ -175,3 +175,7 @@ __Algunos casos de uso pueden ser:__
 * Inventarios en tiempo real
 * Cambios de estados
 * Sincronización de datos
+
+## Comparativa de las opciones de almacenamiento
+
+![resumen](./resumen.png)
