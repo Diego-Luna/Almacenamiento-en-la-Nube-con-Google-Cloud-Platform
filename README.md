@@ -81,21 +81,40 @@ Creamos un Bucket Standar Multi-region en US. Se previo el acceso al público y 
 gsutil mb -c standard -l us --pap enforced -b on --retention 10y gs://gemb-platzi-storage-bucket-01
 ```
 
-__Donde__:
-```-c``` es la clase
-```-l``` es el tipo de locación que deseamos
-```--pap``` especifica el acceso público
-```-b ```es activar el acceso uniforme
-__Avanzado__:
-```--retention ```es el periodo de retención del recurso.
+**Donde**:
+`-c` es la clase
+`-l` es el tipo de locación que deseamos
+`--pap` especifica el acceso público
+`-b `es activar el acceso uniforme
+**Avanzado**:
+`--retention `es el periodo de retención del recurso.
 
 ### Crear tu primer bucket:
 
-* Seleccionar del menú tipo hamburguesa la opción Cloud Storage.
-* Darle clic a “Create Bucket”.
-* Darle un nombre único al “bucket” (puedes usar como prefijo el nombre del proyecto) y Continuar.
-* Seleccionar donde se almacenará (Multi-Región, Región Dual o Región) y Continuar.
-* Seleccionar la clase de almacenamiento (Standard, Nearline, Coldline, Archive) y Continuar.
-* Seleccionar control de acceso (Uniform, Fine-grained) y Continuar.
-* Escoger la Configuración Avanzada que necesites (Encriptación, política de retención,etc.).
-* Darle clic al botón CREATE.
+- Seleccionar del menú tipo hamburguesa la opción Cloud Storage.
+- Darle clic a “Create Bucket”.
+- Darle un nombre único al “bucket” (puedes usar como prefijo el nombre del proyecto) y Continuar.
+- Seleccionar donde se almacenará (Multi-Región, Región Dual o Región) y Continuar.
+- Seleccionar la clase de almacenamiento (Standard, Nearline, Coldline, Archive) y Continuar.
+- Seleccionar control de acceso (Uniform, Fine-grained) y Continuar.
+- Escoger la Configuración Avanzada que necesites (Encriptación, política de retención,etc.).
+- Darle clic al botón CREATE.
+
+## Google Cloud Bigtable
+
+Cloud Bigtable es el servicio de base de datos de Big Data NoSQL de Google, completamente administrado a escala de patabytes para casos de uso en los que el acceso de datos aleatorios de baja latencia, la escalabilidad y la confiabilidad son fundamentales
+
+**Características**
+
+- Alto procesamiento
+- Procesamiento de baja latencia
+- Cantidades muy grandes de datos
+- Cambios de tamaño sin tiempo de inactividad
+- Replicación flexible y automatizada
+- Google Search, Maps y otros productos de Google
+
+**¿Cómo interactuamos con Cloud Big Table?**
+
+- Api de aplicación: Podemos leer y escribir datos atraves de una capa de servicio llamada rede Hbase, que es un gestor de codigo abierto que nos ayuda exponer el point que nos proveen estas operaciones de escribir leer actualizar y borrar y esto se usa normalmente para enviar datos a las aplicaciones o paneles de control
+- Streaming / Transmisión: Datflow Streaming, Saprk Streaming y Apache Storm
+- Batch Processing / Procesamiento por lotes: Los datos se pueden leer y escribir en Big Table en forma de batch (cantidades grandes) esto se puede hacer a través de hadoop, Datflow, Apache Spark.
