@@ -118,3 +118,27 @@ Cloud Bigtable es el servicio de base de datos de Big Data NoSQL de Google, comp
 - Api de aplicación: Podemos leer y escribir datos atraves de una capa de servicio llamada rede Hbase, que es un gestor de codigo abierto que nos ayuda exponer el point que nos proveen estas operaciones de escribir leer actualizar y borrar y esto se usa normalmente para enviar datos a las aplicaciones o paneles de control
 - Streaming / Transmisión: Datflow Streaming, Saprk Streaming y Apache Storm
 - Batch Processing / Procesamiento por lotes: Los datos se pueden leer y escribir en Big Table en forma de batch (cantidades grandes) esto se puede hacer a través de hadoop, Datflow, Apache Spark.
+
+## Cloud SQL
+
+Este es el servicio administrado de Bases de Datos Relacionales. Puede ser MySQL, PosgreSQL y SLQ Server.
+
+En caso de necesitar mayor rendimiento se puede escalar de forma vertical (un máquina más potente).
+Si se requiere más disponibilidad se puede optar por una arquitectura en dos zonas.
+
+**Características claves**
+
+- Totalmente administrada
+- Una solución integrada: Se puede acceder a ellas desde cualquier lado.
+- Confiable: ES fácil configurar las replicas, copias de seguridad y activar el proceso de Failover (reemplazar una instancia cuando esta falla).
+- Migraciones sencillas a CloudSQL: Database Migration Service ayuda a migrar las DB on premise a la Nube facilmente.
+
+En este tipo de Bases de datos realizamos transacciones y deben cumplir los principios ACID.
+
+- Atomicity: Asegura que todas las operaciones que una transaccion se realicen, y en caso contrario que sea posible regresar al estado anterior (rollback).
+
+- Consistency: Asegura que todas las transacciones se realicen con exito, los datos deben tener sentido.
+
+- Isolation: Dicta que las operaciones sean aisladas y transparentes, es decir, multiples operaciones ocurren de forma independiente y sin afectarse.
+
+- Durabilty: Nos asegura que el resultado de una operación permanezca incluso cuando hubo un error.
