@@ -151,3 +151,27 @@ Cloud Spanner Características Clave.
 * Base de datos relacional diseñada para cualquier escala
 * Disponibilidad cinco 9 (99,999%)
 * Fragmentación automática.
+
+## Firestore
+
+Colección: Conjunto de documentos.
+Cloud Firestore:
+
+* Serverless
+* Tiempo Real
+* Soporte Offline
+
+__Características:__
+
+* Escalable
+* Confiable
+* Flexible
+* Disponible
+* Transaccional
+
+__Algunos casos de uso pueden ser:__
+
+* Gestión de perfiles de usuario
+* Inventarios en tiempo real
+* Cambios de estados
+* Sincronización de datos
