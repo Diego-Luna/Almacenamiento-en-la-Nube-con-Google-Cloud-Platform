@@ -142,3 +142,12 @@ En este tipo de Bases de datos realizamos transacciones y deben cumplir los prin
 - Isolation: Dicta que las operaciones sean aisladas y transparentes, es decir, multiples operaciones ocurren de forma independiente y sin afectarse.
 
 - Durabilty: Nos asegura que el resultado de una operación permanezca incluso cuando hubo un error.
+
+## Cloud Spanner
+
+Base de datos de nivel empresarial, distribuido fuertemente consistente y de forma global, estructura relacional a escala horizontal no relacional.
+
+Cloud Spanner Características Clave.
+* Base de datos relacional diseñada para cualquier escala
+* Disponibilidad cinco 9 (99,999%)
+* Fragmentación automática.
